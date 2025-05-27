@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animation </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <!-- Hi guys,
+    This initial code does not yet display the 3D model on the website, you must follow the steps in the video to display and control the 3D model.
+    If the 3D model doesn’t appear on the website, try running this project using the "Live Server" extension in VSCode.
+    Thank you for your support. -->
+
+    <header>
+        <a href="#" class="logo">Ganesh</a>
+    
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+      <model-viewer src="bee_flying.glb" id="model" camera-orbit="90deg 90 deg"  autoplay ></model-viewer>
+    
+    <section class="home">
+        <h1>3D Blue bee</h1>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>About Bees</h2>
+            <p>Bees are winged insects closely related to wasps and ants, known for their roles in pollination and, in the case of the best-known bee species, the western honey bee, for producing honey. Bees are a monophyletic lineage within the superfamily Apoidea. They are currently considered a clade, called Anthophila.[</p>
+            <a href="#">View More</a>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-content">
+            <div class="outer">
+                <div class="inner">
+                    <img src="bee1.png">
+                </div>
+            </div>
+            <div class="outer">
+                <div class="inner"></div>
+            </div>
+            <div class="outer">
+                <div class="inner">
+                    <img src="bee3.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <form class="contact-form">
+            <h2>Contact</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+     <script src = "script.js">
+    </script>
+
+</body>
+
+</html>
